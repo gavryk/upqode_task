@@ -1,0 +1,40 @@
+#choose {
+  padding-top: 110px;
+  text-align: center;
+  padding-bottom: 115px;
+  .section-title {
+    h2 {
+      margin-bottom: 30px;
+    }
+    margin: 0 auto;
+    width: 80%;
+  }
+  .cards {
+    display: flex;
+    color: #503392;
+    margin-top: 80px;
+    .card {
+      width: 200px;
+      margin: 10px 20px;
+      padding: 20px;
+      .card_icon {
+        font-size: 60px;
+        margin-bottom: 55px;
+      }
+      .card_title {
+        h3 {
+          font-size: 14px;
+          color: #222;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+      }
+      .card_description {
+        p {
+          font-weight: lighter;
+          color: #6c6c6c;
+        }
+      }
+    }
+  }
+}

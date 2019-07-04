@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>UPQODE</title>
+</head>
+<body>
+<!--header-->
+<header id="home">
+	<div class="head">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-xs-12">
+					<div class="head_logo">
+						<a href="#">UP<span>QODE</span></a>
+					</div>
+				</div>
+				<div class="col-md-10 col-xs-12">
+					<!--MENU-->
+					<div id="head_menu" class="head_menu">
+						<nav>
+							<ul class="nav">
+								<li><a class="home" href="#home">Home</a></li>
+								<li class="main-menu_list">
+									<a class="nav-item" href="#products">Products</a>
+									<ul class="drop_menu">
+										<li class="drop_menu-item">
+											<a  href="#"><i class="fas fa-angle-double-right"></i>Shoes</a>
+											<ul class="drop_menu-last">
+												<li class="drop_menu-item">
+													<a href="#"><i class="fas fa-angle-double-right"></i>Men shoes</a>
+												</li>
+											</ul>
+										</li>
+										<li><a href="#">test item</a></li>
+										<li><a href="#">test item</a></li>
+										<li><a href="#">test item</a></li>
+									</ul>
+								</li>
+								<li><a class="nav-item" href="#aboutUs">About</a></li>
+								<li><a class="nav-item" href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+						<label>
+							<input type="text" class="head_search">
+						</label>
+						<button><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+<!--				burger, (width < 1024px)-->
+				<div class="burger">
+					<div id="burger_menu" class="burger_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Slider, auto slide, buttons left & right-->
+	<div class="banner">
+		<div id="slider">
+			<div class="slider_row">
+				<div class="slide slide1"></div>
+				<div class="slide slide2"></div>
+				<div class="slide slide3"></div>
+			</div>
+		</div>
+		<button class="slide_btn left"><i class="fas fa-chevron-left"></i></button>
+		<button class="slide_btn right"><i class="fas fa-chevron-right"></i></button>
+		<div class="banner_content">
+			<div class="banner_title">
+				<h1>Creative <span class="yellow">Design Agency</span></h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, distinctio explicabo laudantium nam nulla officiis porro possimus. Ab alias corporis, dolor eius esse et iste placeat, praesentium recusandae ullam, vero.</p>
+			</div>
+
+			<!--dot buttons(click), also works, but do not show current slide-->
+			<div class="dots">
+				<button class="dot" data-num="1"></button>
+				<button class="dot" data-num="2"></button>
+				<button class="dot" data-num="3"></button>
+			</div>
+		</div>
+	</div>
+</header>
+<!--Main-->
+<main>
+	<!---->
+	<section id="choose">
+		<div class="container">
+			<div class="section-title">
+				<h2>Why <span class="blue">Choose Us</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa in neque omnis quis sed, tenetur unde. Aut blanditiis cumque debitis dignissimos ea eligendi, harum inventore necessitatibus odio officia, quibusdam sint!</p>
+			</div>
+			<div class="row">
+				<div class="cards">
+					<div class="card">
+						<div class="card_icon">
+							<i class="far fa-heart"></i>
+						</div>
+						<div class="card_title">
+							<h3>Your title</h3>
+						</div>
+						<div class="card_description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, autem!</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_icon">
+							<i class="far fa-comment-dots"></i>
+						</div>
+						<div class="card_title">
+							<h3>Your title</h3>
+						</div>
+						<div class="card_description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vitae!</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_icon">
+							<i class="fas fa-laptop"></i>
+						</div>
+						<div class="card_title">
+							<h3>Your title</h3>
+						</div>
+						<div class="card_description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, unde?</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_icon">
+							<i class="far fa-star"></i>
+						</div>
+						<div class="card_title">
+							<h3>Your title</h3>
+						</div>
+						<div class="card_description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, reiciendis.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_icon">
+							<i class="far fa-flag"></i>
+						</div>
+						<div class="card_title">
+							<h3>Your title</h3>
+						</div>
+						<div class="card_description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, iste?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="products">
+		<div class="container-fluid">
+			<div class="products_title">
+				<h2>Our <span class="yellow">products</span></h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="products_items">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="product_card">
+							<div class="product_img">
+								<img src="./img/product1.png" alt="product1">
+							</div>
+							<div class="product_description">
+								<div class="product_item-title">
+									<h4>Title</h4>
+									<span>Best Product</span>
+								</div>
+								<div class="product_text">
+									<p>Lorem ipsum dolor amet, consectetur adipisicing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="product_card">
+							<div class="product_img">
+								<img src="./img/product2.png" alt="product1">
+							</div>
+							<div class="product_description">
+								<div class="product_item-title">
+									<h4>Title</h4>
+									<span>Best Product</span>
+								</div>
+								<div class="product_text">
+									<p>Lorem ipsum dolor amet, consectetur adipisicing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ccol-xs-12 col-md-4">
+						<div class="product_card">
+							<div class="product_img">
+								<img src="./img/product3.png" alt="product1">
+							</div>
+							<div class="product_description">
+								<div class="product_item-title">
+									<h4>Title</h4>
+									<span>Best Product</span>
+								</div>
+								<div class="product_text">
+									<p>Lorem ipsum dolor amet, consectetur adipisicing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="product_card">
+							<div class="product_img">
+								<img src="./img/product4.png" alt="product1">
+							</div>
+							<div class="product_description">
+								<div class="product_item-title">
+									<h4>Title</h4>
+									<span>Best Product</span>
+								</div>
+								<div class="product_text">
+									<p>Lorem ipsum dolor amet, consectetur adipisicing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="product_card">
+							<div class="product_img">
+								<img src="./img/product5.png" alt="product1">
+							</div>
+							<div class="product_description">
+								<div class="product_item-title">
+									<h4>Title</h4>
+									<span>Best Product</span>
+								</div>
+								<div class="product_text">
+									<p>Lorem ipsum dolor amet, consectetur adipisicing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="product_card">
+							<div class="product_img">
+								<img src="./img/product6.png" alt="product1">
+							</div>
+							<div class="product_description">
+								<div class="product_item-title">
+									<h4>Title</h4>
+									<span>Best Product</span>
+								</div>
+								<div class="product_text">
+									<p>Lorem ipsum dolor amet, consectetur adipisicing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="aboutUs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<div class="about_company">
+						<div class="about_company-title">
+							<h2><span class="blue">About</span>Us</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cumque dolore esse eum facere harum non nostrum nulla voluptate.</p>
+						</div>
+						<div class="about_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis deleniti ea eius eligendi eos error et fuga fugiat labore maiores molestias, mollitia nam quaerat qui quos reiciendis, rerum unde, velit voluptates. Ab animi dolores eos esse, est facilis nemo, neque nostrum, perspiciatis possimus quibusdam ratione repellat repudiandae tempore voluptates!</p>
+						</div>
+						<div class="skills">
+							<div class="description">
+								<p>Photoshop</p>
+								<span class="percent photoshop"></span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar photoshop" style="width:79%" data-max="79"></div>
+							</div>
+							<div class="description">
+								<p>html/Css</p>
+								<span class="percent htmlCss"></span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar htmlCss" style="width:90%" data-max="90"></div>
+							</div>
+							<div class="description">
+								<p>Javascript</p>
+								<span class="percent javascript"></span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar javascript" style="width:69%" data-max="69"></div>
+							</div>
+							<div class="description">
+								<p>Wordpress</p>
+								<span class="percent wordpress"></span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar wordpress" style="width:92%" data-max="92"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="ipad">
+						<img src="./img/ipad.png" alt="ipad">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<section id="contact">
+	<div class="getInTouch_title">
+		<h2>Get In <span class="blue">Touch</span></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at blanditiis distinctio fuga inventore laudantium, minima optio quos, ratione reiciendis, sed voluptas.</p>
+	</div>
+	<div class="getInTouch">
+		<div class="map">
+			<div class="dark_fon">
+				<div class="form">
+					<div class="row">
+						<div class="col-md-8 col-xs-12">
+							<form>
+								<div class="inputs">
+									<label>
+										<input type="text" placeholder="Full Name" required>
+									</label>
+									<label>
+										<input type="email" placeholder="E-mail Address" required>
+									</label>
+								</div>
+								<label class="message">
+									<textarea placeholder="Message"></textarea>
+								</label>
+								<div class="send">
+									<label>
+										<input type="checkbox" required>
+										I like your company
+									</label>
+									<button class='send_btn' type="submit">Send</button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div class="contacts">
+								<div class="address">
+									<p>69/A, Some Street Name</p>
+									<p>Your City, code 01234</p>
+									<p>Country Name</p>
+								</div>
+								<div class="number_phone">
+									<p>+880 123 456 78 98</p>
+									<p>+860 987 648 74 95</p>
+								</div>
+								<div class="email">
+									<p>company@mail.com</p>
+									<p>sales@mail.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<iframe class='map_frame' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5146.077571950946!2d24.024666621270715!3d49.84172874022951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1562184125458!5m2!1sru!2sua" allowfullscreen></iframe>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="copyright">
+		<p>Copyright © Company. All Rights Reserved  2016</p>
+	</div>
+	<div class="social">
+		<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+		<a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
+		<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+		<a href="#" class="dribbble"><i class="fas fa-basketball-ball"></i></a>
+	</div>
+</footer>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/jquery.main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+#aboutUs {
+  padding: 120px 0;
+  .about_company-title {
+    p {
+      margin-top: 25px;
+      color: #999;
+    }
+  }
+  .about_company {
+    .about_text {
+      margin: 50px 0;
+    }
+    .skills {
+      .progress {
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        background-color: transparent;
+        border: 1px solid darkgrey;
+        border-radius: 0;
+        height: 10px;
+        margin-bottom: 20px;
+        .progress-bar {
+          height: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #009dda;
+        }
+      }
+      .description {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .ipad {
+    padding-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
