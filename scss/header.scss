@@ -32,6 +32,9 @@ header {
           height: 100%;
           text-decoration: none;
           color: #232323;
+          i {
+            margin-left: 5px;
+          }
         }
       }
       .menu_active {
@@ -39,21 +42,11 @@ header {
       }
       .main-menu_list {
         position: relative;
-        &:hover {
-          .drop_menu {
-            transition: .5s ease-out;
-            display: flex;
-            top: 100%;
-            opacity: 1;
-          }
-        }
         .drop_menu, .drop_menu-last {
           position: absolute;
-          top: -9999%;
+          top: 50px;
+          display: none;
           background: rgba(89, 89, 89, .7);
-          opacity: 0;
-          transition: 1s ease-out;
-          display: flex;
           flex-direction: column;
           padding: 20px 10px;
           border-top: 2px solid #fff200;
@@ -70,17 +63,9 @@ header {
             text-align: center;
             width: 10vw;
             margin: 0;
-            &:hover {
-              .drop_menu-last {
-                transition: .5s ease-out;
-                top: 50%;
-                opacity: 1;
-              }
-            }
           }
         }
         .drop_menu-last {
-          transition: .5s ease-out;
           top: 0;
           left: 100%;
           width: 100%;

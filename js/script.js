@@ -13,15 +13,15 @@ let slideIndex = 1;
 
 
 // add class active for link in head menu
-let menu_item = document.querySelectorAll('.nav-item');
-for(let i = 0; i < menu_item.length; i++) {
-    menu_item[i].addEventListener('focusin', function (event) {
-        event.target.classList.add('menu_active');
-    });
-    menu_item[i].addEventListener('blur', function (event) {
-        event.target.classList.remove('menu_active');
-    });
-}
+// let menu_item = document.querySelectorAll('.nav-item');
+// for(let i = 0; i < menu_item.length; i++) {
+//     menu_item[i].addEventListener('focusin', function (event) {
+//         event.target.classList.add('menu_active');
+//     });
+//     menu_item[i].addEventListener('blur', function (event) {
+//         event.target.classList.remove('menu_active');
+//     });
+// }
 
 //---------------------------------------------------------
 // Try jQuery better
@@ -35,10 +35,9 @@ for(let i = 0; i < menu_item.length; i++) {
 // });
 //---------------------------------------------
 //show burger menu (Width < 1024px);
-burger.addEventListener('click', function() {
-    console.log('hi');
-    head_menu.classList.toggle('head_menu-active');
-});
+// burger.addEventListener('click', function() {
+//     head_menu.classList.toggle('head_menu-active');
+// });
 //-----------------------------------------------
 //Slider
 prev.addEventListener('click', function() {

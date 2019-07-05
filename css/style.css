@@ -52,22 +52,17 @@ header {
           height: 100%;
           text-decoration: none;
           color: #232323; }
+          header .head .head_menu li a i {
+            margin-left: 5px; }
       header .head .head_menu .menu_active {
         font-weight: bold; }
       header .head .head_menu .main-menu_list {
         position: relative; }
-        header .head .head_menu .main-menu_list:hover .drop_menu {
-          transition: .5s ease-out;
-          display: flex;
-          top: 100%;
-          opacity: 1; }
         header .head .head_menu .main-menu_list .drop_menu, header .head .head_menu .main-menu_list .drop_menu-last {
           position: absolute;
-          top: -9999%;
+          top: 50px;
+          display: none;
           background: rgba(89, 89, 89, 0.7);
-          opacity: 0;
-          transition: 1s ease-out;
-          display: flex;
           flex-direction: column;
           padding: 20px 10px;
           border-top: 2px solid #fff200; }
@@ -81,12 +76,7 @@ header {
             text-align: center;
             width: 10vw;
             margin: 0; }
-            header .head .head_menu .main-menu_list .drop_menu .drop_menu-item:hover .drop_menu-last, header .head .head_menu .main-menu_list .drop_menu-last .drop_menu-item:hover .drop_menu-last {
-              transition: .5s ease-out;
-              top: 50%;
-              opacity: 1; }
         header .head .head_menu .main-menu_list .drop_menu-last {
-          transition: .5s ease-out;
           top: 0;
           left: 100%;
           width: 100%; }
@@ -187,6 +177,10 @@ header {
           header .banner .banner_content .banner_title h1 span {
             color: #fff200; }
 
+@media (max-width: 600px) {
+  header .head .head_menu .main-menu_list #drop_menu-last {
+    width: 80%;
+    left: -95px; } }
 @media (max-width: 768px) {
   header .head #head_menu {
     display: flex;
@@ -207,6 +201,17 @@ header {
           text-align: center;
           height: 100%;
           width: 100%; }
+          header .head #head_menu nav ul li .drop_menu {
+            display: none;
+            background: rgba(89, 89, 89, 0.7);
+            z-index: 5;
+            top: 0;
+            right: 65px;
+            width: 30%; }
+            header .head #head_menu nav ul li .drop_menu .drop_menu-last {
+              display: none;
+              width: 60%;
+              background: rgba(89, 89, 89, 0.7); }
   header .banner .banner_title h1 {
     margin-top: 135px; }
 
@@ -278,12 +283,16 @@ header {
           display: block;
           z-index: 0;
           transition: .8s ease-out; }
-
-  #products .products_items .product_card {
-    flex-direction: column;
-    text-align: center; }
-    #products .products_items .product_card .product_img {
-      margin: 0; } }
+      header .head .burger-active span:first-child {
+        transform-origin: right;
+        transform: rotate(-35deg);
+        transition: .8s ease-out; }
+      header .head .burger-active span:nth-child(2) {
+        opacity: 0; }
+      header .head .burger-active span:last-child {
+        transform-origin: right;
+        transform: rotate(35deg);
+        transition: .8s ease-out; } }
 @media (max-width: 1200px) {
   #choose .cards {
     flex-wrap: wrap; } }

@@ -14,4 +14,36 @@ $(document).ready(function(){
             scrollTop:target_home
         }, 'slow');
     });
+
+    //Burger-menu (window < 1024px)
+    $('.burger_menu').on('click', function() {
+        $(this).toggleClass('burger-active');
+       $('.head_menu').toggleClass('head_menu-active');
+    });
+
+
+    // Dropdown menu
+    $('.main-menu_list').on('click', function(e) {                      // sorry, i did click
+        e.preventDefault();
+       $('.drop_menu').show(1000).on('mouseleave', function() {
+           $(this).hide(1000);
+       });
+       $('.drop_menu-item').on('click', function(e) {
+           e.preventDefault();
+           $('.drop_menu-last').show(1000).on('mouseleave', function() {
+               $(this).hide(1000);
+           })
+       })
+
+    });
+
+    // Redid from JS to jQuery
+    $('.nav-item, .home').each(function() {
+        $(this).on('focusin', function () {
+            $(this).toggleClass('menu_active');
+        });
+        $(this).on('blur', function () {
+            $(this).toggleClass('menu_active');
+        });
+    })
 });
