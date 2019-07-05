@@ -1,13 +1,13 @@
 // Scroll to block
 $(document).ready(function(){
-    $('.nav-item').click(function(event){
+    $('.nav-item').on('click', function(event){
         event.preventDefault();
         let target_top= $('section[id="'+this.href.split("#")[1]+'"]').offset().top;
         $('html, body').animate({
             scrollTop:target_top
         }, 'slow');
     });
-    $('.home').click(function(event){
+    $('.home').on('click', function(event){
         event.preventDefault();
         let target_home= $('header[id="'+this.href.split("#")[1]+'"]').offset().top;
         $('html, body').animate({
@@ -45,5 +45,22 @@ $(document).ready(function(){
         $(this).on('blur', function () {
             $(this).toggleClass('menu_active');
         });
-    })
+    });
+
+
+    // Animate progress bar
+    let windowHeight = $(window).height();
+
+    $(document).on('scroll', function() {
+        let progress = $('.progress-bar');
+        $(progress).each(function() {
+            let max = $(this).data('max');
+            let self = $(this),
+                height = self.offset().top + self.height();
+            if ($(document).scrollTop() + windowHeight >= height) {
+                self.css('width', max);
+            }
+        });
+    });
+
 });

@@ -116,28 +116,26 @@ dotSlide();
 
 //---------------------------------------------------
 //Progress bar, skills
-function progress() {
-    let bar = document.querySelectorAll('.progress-bar'),
-        outSpan = document.querySelectorAll('.percent');
-
-    bar.forEach(function(el) {
-        let elWidth = el.style.width;
-        outSpan.forEach(function(p) {
-            if(el.classList.contains('photoshop') && p.classList.contains('photoshop')) {
-                p.innerHTML = elWidth;
-            }
-            if(el.classList.contains('htmlCss') && p.classList.contains('htmlCss')) {
-                p.innerHTML = elWidth;
-            }
-            if(el.classList.contains('javascript') && p.classList.contains('javascript')) {
-                p.innerHTML = elWidth;
-            }
-            if(el.classList.contains('wordpress') && p.classList.contains('wordpress')) {
-                p.innerHTML = elWidth;
-            }
-        })
-    })
-}
-progress();
-
-// animation for progress bar
+// function progress() {
+//     let bar = document.querySelectorAll('.progress-bar'),
+//         outSpan = document.querySelectorAll('.percent');
+//
+//     bar.forEach(function(el) {
+//         let elWidth = el.style.width;
+//         outSpan.forEach(function(p) {
+//             if(el.classList.contains('photoshop') && p.classList.contains('photoshop')) {
+//                 p.innerHTML = elWidth;
+//             }
+//             if(el.classList.contains('htmlCss') && p.classList.contains('htmlCss')) {
+//                 p.innerHTML = elWidth;
+//             }
+//             if(el.classList.contains('javascript') && p.classList.contains('javascript')) {
+//                 p.innerHTML = elWidth;
+//             }
+//             if(el.classList.contains('wordpress') && p.classList.contains('wordpress')) {
+//                 p.innerHTML = elWidth;
+//             }
+//         })
+//     })
+// }
+// progress();
