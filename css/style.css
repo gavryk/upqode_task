@@ -180,7 +180,15 @@ header {
 @media (max-width: 600px) {
   header .head .head_menu .main-menu_list #drop_menu-last {
     width: 80%;
-    left: -95px; } }
+    left: -95px; }
+
+  .getInTouch .map .dark_fon .form {
+    height: 100%; }
+    .getInTouch .map .dark_fon .form form {
+      display: flex;
+      flex-direction: column; }
+      .getInTouch .map .dark_fon .form form .inputs {
+        flex-direction: column; } }
 @media (max-width: 768px) {
   header .head #head_menu {
     display: flex;

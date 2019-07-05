@@ -25,13 +25,13 @@ $(document).ready(function(){
     // Dropdown menu
     $('.main-menu_list').on('click', function(e) {                      // sorry, i did click
         e.preventDefault();
-       $('.drop_menu').show(1000).on('mouseleave', function() {
-           $(this).hide(1000);
+       $('.drop_menu').fadeIn(1000).on('mouseleave', function() {
+           $(this).fadeOut(1000);
        });
        $('.drop_menu-item').on('click', function(e) {
            e.preventDefault();
-           $('.drop_menu-last').show(1000).on('mouseleave', function() {
-               $(this).hide(1000);
+           $('.drop_menu-last').fadeIn(1000).on('mouseleave', function() {
+               $(this).fadeOut(1000);
            })
        })
 
@@ -54,9 +54,10 @@ $(document).ready(function(){
     $(document).on('scroll', function() {
         let progress = $('.progress-bar');
         $(progress).each(function() {
-            let max = $(this).data('max');
+            let max = $(this).attr('data-max');
             let self = $(this),
                 height = self.offset().top + self.height();
+            let output = self.parents().children('.skills').children('.description').children('span');
             if ($(document).scrollTop() + windowHeight >= height) {
                 self.css('width', max);
             }

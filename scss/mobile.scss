@@ -12,6 +12,23 @@
     }
   }
 
+    .getInTouch {
+      .map {
+        .dark_fon {
+          .form {
+            height: 100%;
+            form {
+              display: flex;
+              flex-direction: column;
+              .inputs {
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+
 }
 @media (max-width: 768px) {
   header {
