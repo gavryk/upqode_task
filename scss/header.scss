@@ -1,7 +1,7 @@
 header {
   height: 100vh;
   .head {
-    position: fixed;
+    position: relative;
     width: 100%;
     padding: 25px 0 15px 0;
     background-color: #fff;
@@ -96,52 +96,54 @@ header {
       display: none;
     }
   }
+  .head_fixed {
+    position: fixed;
+    transition: .8s ease-out;
+  }
   .banner {
     width: 100%;
     height: 100%;
-    #slider {
-      overflow: hidden;
-      position: absolute;
-      top: 0;
+    position: relative;
+    .slider {
       height: 100%;
-      width: 100%;
-      .slider_row {
-        display: flex;
-        position: absolute;
-        left: 0;
-        width: 300%;
+      overflow: hidden;
+      position: relative;
+      .slick-list {
         height: 100%;
-        transition: all ease 1s;
-        .slide1 {
-          background: url("../img/image-bg.jpg")no-repeat center / cover;
-        }
-        .slide2 {
-          background: url("../img/image-bg2.jpg")no-repeat center / cover;
-        }
-        .slide3 {
-          background: url("../img/image-bg3.jpg")no-repeat center / cover;
-        }
-        .slide {
+        .slick-track {
           height: 100%;
-          width: 100%;
         }
       }
-    }
-    .slide_btn {
-      z-index: 20;
-      position: absolute;
-      top: 50%;
-      outline: none;
-      color: #fff;
-      background-color: rgba(255, 255, 255, .5);
-      padding: 10px 15px;
-      border: none;
-    }
-    .left {
-      left: 0;
-    }
-    .right {
-      right: 0;
+      button {
+        position: absolute;
+        top: 50%;
+        z-index: 20;
+        &:before {
+          border-radius: 0;
+          font-size: 35px;
+        }
+      }
+      .slick-prev {
+        left: 20px;
+      }
+      .slick-next {
+        right: 30px;
+      }
+      .slick-dots {
+        bottom: 55px;
+        li {
+          button {
+            &:before {
+              font-size: 15px;
+              color: #fff;
+            }
+          }
+        }
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
     .banner_content {
       position: absolute;

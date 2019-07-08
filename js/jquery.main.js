@@ -1,5 +1,14 @@
 // Scroll to block
-$(document).ready(function(){
+$(function(){
+
+    $(window).on('scroll', function() {
+       if($(document).scrollTop() > 100) {
+           $('.head').addClass('head_fixed');
+        } else {
+           $('.head').removeClass('head_fixed');
+       }
+    });
+
     $('.nav-item').on('click', function(event){
         event.preventDefault();
         let target_top= $('section[id="'+this.href.split("#")[1]+'"]').offset().top;
@@ -34,10 +43,9 @@ $(document).ready(function(){
                $(this).fadeOut(1000);
            })
        })
-
     });
 
-    // Redid from JS to jQuery
+    // Redid from JS to jQuery class active for link in head menu
     $('.nav-item, .home').each(function() {
         $(this).on('focusin', function () {
             $(this).toggleClass('menu_active');
@@ -62,6 +70,24 @@ $(document).ready(function(){
                 self.css('width', max);
             }
         });
+    });
+
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        mobileFirst: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+
+            }
+        }]
     });
 
 });

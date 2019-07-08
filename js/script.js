@@ -40,79 +40,79 @@ let slideIndex = 1;
 // });
 //-----------------------------------------------
 //Slider
-prev.addEventListener('click', function() {
-    slideState = slideState - 100;
-    slideIndex++;
-    if(slideState < -200) {
-        slideState = 0;
-        slideIndex = 1;
-    }
-    slider.style.left = slideState + '%';
-});
-next.addEventListener('click', function() {
-    slideState = slideState + 100;
-    slideIndex--;
-    if(slideState > 0) {
-        slideState = (-200);
-        slideIndex = 1;
-    }
-    slider.style.left = slideState + '%';
-});
+// prev.addEventListener('click', function() {
+//     slideState = slideState - 100;
+//     slideIndex++;
+//     if(slideState < -200) {
+//         slideState = 0;
+//         slideIndex = 1;
+//     }
+//     slider.style.left = slideState + '%';
+// });
+// next.addEventListener('click', function() {
+//     slideState = slideState + 100;
+//     slideIndex--;
+//     if(slideState > 0) {
+//         slideState = (-200);
+//         slideIndex = 1;
+//     }
+//     slider.style.left = slideState + '%';
+// });
 //--------------------------------------------------
 // Auto slider
-function autoSlider() {
-    timer = setTimeout(function() {
-        slideState -= 100;
-        slideIndex++;
-        if(slideState < -200) {
-            slideState = 0;
-            slideIndex = 1;
-        }
-        slider.style.left = slideState + '%';
-        autoSlider();
-    }, 5000);
-}
-autoSlider();
+// function autoSlider() {
+//     timer = setTimeout(function() {
+//         slideState -= 100;
+//         slideIndex++;
+//         if(slideState < -200) {
+//             slideState = 0;
+//             slideIndex = 1;
+//         }
+//         slider.style.left = slideState + '%';
+//         autoSlider();
+//     }, 5000);
+// }
+// autoSlider();
 //--------------------------------------------------
-function dotSlide() {
-    let dots = document.querySelectorAll('.dot');
-
-    dots.forEach(function(el) {
-        let dataNum = el.getAttribute('data-num');
-
-        el.addEventListener('click', function() {
-            if(dataNum === '1') {                                   // if first dot
-                if(slideState === -100) {                           // slider 2-nd
-                    slideState += 100;                              // slide left
-                    slider.style.left = slideState + '%';
-                } else if(slideState === -200) {                    //if slider 3-rd
-                    slideState += 200;                              // slide left twice
-                    slider.style.left = slideState + '%';
-                }
-            }
-
-            if(dataNum === '2') {                                   // if second dot
-                if(slideState === 0) {                              // slider 1-st
-                    slideState -= 100;                              // slide right
-                    slider.style.left = slideState + '%';
-                } else if(slideState === -200) {                    // if slide 3-rd
-                    slideState += 100;                              // slide left
-                    slider.style.left = slideState + '%';
-                }
-            }
-            if(dataNum === '3') {                                   //if third dot
-                if(slideState === -100) {                           // slider 2-nd
-                    slideState -= 100;                              // slide right
-                    slider.style.left = slideState + '%';
-                } else if(slideState === 0) {                       // if slider 1-st
-                    slideState -= 200;                              // slide right twice
-                    slider.style.left = slideState + '%';
-                }
-            }
-        });
-    })
-}
-dotSlide();
+// function dotSlide() {
+//     let dots = document.querySelectorAll('.dot');
+//
+//     dots.forEach(function(el) {
+//         let dataNum = el.getAttribute('data-num');
+//
+//         el.addEventListener('click', function() {
+//             if(dataNum === '1') {                                   // if first dot
+//                 if(slideState === -100) {                           // slider 2-nd
+//                     slideState += 100;                              // slide left
+//                     slider.style.left = slideState + '%';
+//                 } else if(slideState === -200) {                    //if slider 3-rd
+//                     slideState += 200;                              // slide left twice
+//                     slider.style.left = slideState + '%';
+//                 }
+//             }
+//
+//             if(dataNum === '2') {                                   // if second dot
+//                 if(slideState === 0) {                              // slider 1-st
+//                     slideState -= 100;                              // slide right
+//                     slider.style.left = slideState + '%';
+//                 } else if(slideState === -200) {                    // if slide 3-rd
+//                     slideState += 100;                              // slide left
+//                     slider.style.left = slideState + '%';
+//                 }
+//             }
+//             if(dataNum === '3') {                                   //if third dot
+//                 if(slideState === -100) {                           // slider 2-nd
+//                     slideState -= 100;                              // slide right
+//                     slider.style.left = slideState + '%';
+//                 } else if(slideState === 0) {                       // if slider 1-st
+//                     slideState -= 200;                              // slide right twice
+//                     slider.style.left = slideState + '%';
+//                 }
+//             }
+//         });
+//     })
+// }
+// dotSlide();
 
 //---------------------------------------------------
 //Progress bar, skills
